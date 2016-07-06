@@ -15,7 +15,9 @@ Execution:
 ./canon_mod_p.out N P [output_file]
 
 N: integer for the motive {0,1,N}
+
 P: prime number for the canon mod P
+
 [output_file]: optional argument. If specified, the program will output the entries of the canon in this file
 
 
