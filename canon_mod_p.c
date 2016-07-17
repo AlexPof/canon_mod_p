@@ -7,11 +7,10 @@ int main(int argc, char *argv[])
 {
 	int N,P;
 	int* U;
-	int i,mark=0,flag=0,write_entries_flag;
+	int i,mark=0,flag=0;
 	unsigned long long L,entry=0;
 	char* output_filename;
 	FILE* output_file=NULL;
-	FILE* save_file=NULL;
 	
 	if(argc<3) {
 		printf("Invalid number of arguments !\n");
