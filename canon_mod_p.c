@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
 	int* U;
 	int i,mark=0,flag=0;
 	unsigned long long L,entry=0;
-	char* output_filename;
 	FILE* output_file=NULL;
 	
 	if(argc<3) {
