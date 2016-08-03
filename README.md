@@ -4,6 +4,11 @@ C program for calculating rhythmic canons mod P (where P is a prime) with motive
 For additional information, see "Modulus p Rhythmic Tiling Canons and some implementations in Open Music
 visual programming language", Proceedings ICMC|SMC|2014, 14-20 September 2014, Athens, Greece. Available at: https://hal.archives-ouvertes.fr/hal-01161082/document
 
+For a general introduction, see also
+
+https://alpof.wordpress.com/2016/04/25/rhythmic-canons-modulus-p/
+https://alpof.wordpress.com/2016/05/14/rhythmic-canons-modulus-p-2/
+
 *******************************
 
 Compilation:
