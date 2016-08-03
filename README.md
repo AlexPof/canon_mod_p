@@ -7,6 +7,7 @@ visual programming language", Proceedings ICMC|SMC|2014, 14-20 September 2014, A
 For a general introduction, see also
 
 https://alpof.wordpress.com/2016/04/25/rhythmic-canons-modulus-p/
+
 https://alpof.wordpress.com/2016/05/14/rhythmic-canons-modulus-p-2/
 
 *******************************
