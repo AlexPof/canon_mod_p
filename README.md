@@ -14,11 +14,11 @@ https://alpof.wordpress.com/2016/05/14/rhythmic-canons-modulus-p-2/
 
 Compilation:
 
-gcc canon_mod_p.c -o canon_mod_p.out
+    >>> gcc canon_mod_p.c -o canon_mod_p.out
 
 Execution:
 
-./canon_mod_p.out N P [output_file]
+    >>> ./canon_mod_p.out N P [output_file]
 
 N: integer for the motive {0,1,N}
 
