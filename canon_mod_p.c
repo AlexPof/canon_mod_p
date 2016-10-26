@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[])
 {
-	int N,P;
+	int N,P,mult;
 	int* U;
 	int i,mark=0,flag=0;
 	unsigned long long L,entry=0;
@@ -40,14 +40,19 @@ int main(int argc, char *argv[])
 	
 	while(flag==0) {
 		
+		if (U[0]==0)
+			mult=1;
+		else
+			mult=P-U[0]+1;
+		
 		L+=mark;
 		entry+=mark;
 		if (output_file!=NULL)
-			fprintf(output_file,"%llu\n",entry);
+			fprintf(output_file,"(%llu,%d)\n",entry,mult);
 					
-		U[0]= (U[0]+1) % P;
-		U[1]= (U[1]+1) % P;
-		U[N]= (U[N]+1) % P;
+		U[0]= (U[0]+mult) % P;
+		U[1]= (U[1]+mult) % P;
+		U[N]= (U[N]+mult) % P;
 
 		flag=1;
 		for (mark=0; mark<N+1; mark++) {
@@ -62,6 +67,7 @@ int main(int argc, char *argv[])
 		for (i=(N+1-mark); i<N+1; i++)
 			U[i]=0;
 	}
+
 	printf("*****************\nFinal length of canon with motive {0,1,%d} mod %d : %llu \n",N,P,L);
 	if (output_file!=NULL) {
 		fprintf(output_file,"*****************\nFinal length of canon with motive {0,1,%d} mod %d : %llu \n",N,P,L);
